@@ -1,0 +1,615 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(240, 51%, 81%);
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: hsl(211, 91%, 27%);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #e3e3e3;
+}
+
+/* Main Section */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero {
+    background: url('l.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: hsl(221, 86%, 45%);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.cta-button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+/* Features Section */
+.features {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.feature {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: hsl(211, 91%, 27%);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .features {
+        margin-top: 20px;
+    }
+}
+
+/* Lessons Section */
+.lessons {
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+}
+
+.lesson {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lesson:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lesson h2 {
+    font-size: 2em;
+    color: #333333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.lesson p {
+    font-size: 1.2em;
+    color: #666666;
+    line-height: 1.8;
+}
+
+/* Responsive Design for Lessons */
+@media (max-width: 768px) {
+    .lessons {
+        padding: 15px;
+    }
+
+    .lesson {
+        padding: 20px;
+    }
+
+    .lesson h2 {
+        font-size: 1.6em;
+    }
+
+    .lesson p {
+        font-size: 1em;
+    }
+}
+
+/* Quiz Page Styles */
+main {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style for Quiz Questions */
+.quiz-question {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.quiz-question label {
+    display: block;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.quiz-question input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Button Styling */
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-question {
+        padding: 15px;
+    }
+
+    .quiz-question p {
+        font-size: 1em;
+    }
+
+    .quiz-question label {
+        font-size: 1em;
+    }
+
+    .submit-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+/* Resources Section */
+.resource-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.resource-item {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resource-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.resource-item h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.resource-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.resource-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resource-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .resource-item {
+        width: 90%;
+    }
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h1 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item strong {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 15px;
+    }
+
+    .faq-section h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* General Styles for the Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Us Page Styles */
+.about-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensures it sits on top of the background */
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-section h1 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Background Image */
+body {
+    background: url('v.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 15px;
+    }
+
+    .about-section h1 {
+        font-size: 1.5em;
+    }
+
+    .about-section p {
+        font-size: 1em;
+    }
+}
+
+/* General Styles for the Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contact Section Styles */
+.contact-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-container h1 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 15px;
+    }
+
+    .contact-container h1 {
+        font-size: 1.5em;
+    }
+
+    .form-group label {
+        font-size: 1em;
+    }
+}
+
+/* General Styles for the Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Feedback Container */
+.feedback-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.feedback-container h1 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Feedback Form Styles */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feedback-container {
+        padding: 15px;
+    }
+
+    .feedback-container h1 {
+        font-size: 1.5em;
+    }
+
+    .form-group label {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}

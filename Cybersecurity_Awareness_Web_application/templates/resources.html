@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Cybersecurity Awareness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/lessons">Lessons</a></li>
+                <li><a href="/quiz">Quiz</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Resources</h1>
+        <section class="resource-section">
+            <div class="resource-item">
+                <img src="{{ url_for('static', filename='css/c.png') }}" alt="CISA">
+                <h2><a href="https://www.cisa.gov" target="_blank">CISA Cybersecurity Resources</a></h2>
+                <p>Explore comprehensive cybersecurity resources from the Cybersecurity and Infrastructure Security Agency (CISA).</p>
+            </div>
+            <div class="resource-item">
+                <img src="{{ url_for('static', filename='css/en.png') }}" alt="ENISA">
+                <h2><a href="https://www.enisa.europa.eu" target="_blank">ENISA Resources</a></h2>
+                <p>Access a wide range of cybersecurity resources and reports from the European Union Agency for Cybersecurity (ENISA).</p>
+            </div>
+            <div class="resource-item">
+                <img src="{{ url_for('static', filename='css/d.png') }}" alt="SANS Institute">
+                <h2><a href="https://www.sans.org" target="_blank">SANS Institute</a></h2>
+                <p>Find valuable training resources and research materials from the SANS Institute, a global leader in cybersecurity training.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cybersecurity Awareness. All rights reserved.</p>
+    </footer>
+</body>
+</html>

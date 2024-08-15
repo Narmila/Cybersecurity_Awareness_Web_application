@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Cybersecurity Awareness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/lessons">Lessons</a></li>
+                <li><a href="/quiz">Quiz</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Cybersecurity Quiz</h1>
+        <form method="POST" action="{{ url_for('quiz') }}">
+            <!-- Question 1 -->
+            <div class="quiz-question">
+                <p>What is AI in cybersecurity primarily used for?</p>
+                <label><input type="radio" name="answer_1" value="Anomaly detection" required> Anomaly detection</label><br>
+                <label><input type="radio" name="answer_1" value="Network management"> Network management</label><br>
+                <label><input type="radio" name="answer_1" value="Threat intelligence"> Threat intelligence</label><br>
+                <label><input type="radio" name="answer_1" value="Data encryption"> Data encryption</label><br>
+            </div>
+            <!-- Question 2 -->
+            <div class="quiz-question">
+                <p>What does AI stand for?</p>
+                <label><input type="radio" name="answer_2" value="Artificial Intelligence" required> Artificial Intelligence</label><br>
+                <label><input type="radio" name="answer_2" value="Advanced Information"> Advanced Information</label><br>
+                <label><input type="radio" name="answer_2" value="Automated Integration"> Automated Integration</label><br>
+                <label><input type="radio" name="answer_2" value="Analytical Insight"> Analytical Insight</label><br>
+            </div>
+            <!-- Question 3 -->
+            <div class="quiz-question">
+                <p>Which algorithm is commonly used in AI for cybersecurity?</p>
+                <label><input type="radio" name="answer_3" value="Neural Networks" required> Neural Networks</label><br>
+                <label><input type="radio" name="answer_3" value="Decision Trees"> Decision Trees</label><br>
+                <label><input type="radio" name="answer_3" value="K-Means Clustering"> K-Means Clustering</label><br>
+                <label><input type="radio" name="answer_3" value="Support Vector Machines"> Support Vector Machines</label><br>
+            </div>
+            <!-- Question 4 -->
+            <div class="quiz-question">
+                <p>What is a common use case of machine learning in cybersecurity?</p>
+                <label><input type="radio" name="answer_4" value="Spam filtering" required> Spam filtering</label><br>
+                <label><input type="radio" name="answer_4" value="Email encryption"> Email encryption</label><br>
+                <label><input type="radio" name="answer_4" value="Firewall configuration"> Firewall configuration</label><br>
+                <label><input type="radio" name="answer_4" value="Password management"> Password management</label><br>
+            </div>
+            <!-- Question 5 -->
+            <div class="quiz-question">
+                <p>Which of the following is a type of AI attack?</p>
+                <label><input type="radio" name="answer_5" value="Adversarial Attack" required> Adversarial Attack</label><br>
+                <label><input type="radio" name="answer_5" value="SQL Injection"> SQL Injection</label><br>
+                <label><input type="radio" name="answer_5" value="Cross-Site Scripting"> Cross-Site Scripting</label><br>
+                <label><input type="radio" name="answer_5" value="Phishing"> Phishing</label><br>
+            </div>
+            <!-- Question 6 -->
+            <div class="quiz-question">
+                <p>What does a Security Information and Event Management (SIEM) system do?</p>
+                <label><input type="radio" name="answer_6" value="Collects and analyzes security data" required> Collects and analyzes security data</label><br>
+                <label><input type="radio" name="answer_6" value="Manages user passwords"> Manages user passwords</label><br>
+                <label><input type="radio" name="answer_6" value="Encrypts data"> Encrypts data</label><br>
+                <label><input type="radio" name="answer_6" value="Performs network segmentation"> Performs network segmentation</label><br>
+            </div>
+            <!-- Question 7 -->
+            <div class="quiz-question">
+                <p>Which term refers to a software vulnerability that is exploited by attackers?</p>
+                <label><input type="radio" name="answer_7" value="Zero-Day Exploit" required> Zero-Day Exploit</label><br>
+                <label><input type="radio" name="answer_7" value="Denial of Service"> Denial of Service</label><br>
+                <label><input type="radio" name="answer_7" value="Man-in-the-Middle Attack"> Man-in-the-Middle Attack</label><br>
+                <label><input type="radio" name="answer_7" value="Brute Force Attack"> Brute Force Attack</label><br>
+            </div>
+            <!-- Question 8 -->
+            <div class="quiz-question">
+                <p>What is the primary purpose of a firewall?</p>
+                <label><input type="radio" name="answer_8" value="Monitor and control incoming and outgoing network traffic" required> Monitor and control incoming and outgoing network traffic</label><br>
+                <label><input type="radio" name="answer_8" value="Detect malware"> Detect malware</label><br>
+                <label><input type="radio" name="answer_8" value="Encrypt data"> Encrypt data</label><br>
+                <label><input type="radio" name="answer_8" value="Manage user access"> Manage user access</label><br>
+            </div>
+            <!-- Question 9 -->
+            <div class="quiz-question">
+                <p>What is an example of a biometric authentication method?</p>
+                <label><input type="radio" name="answer_9" value="Fingerprint recognition" required> Fingerprint recognition</label><br>
+                <label><input type="radio" name="answer_9" value="Username and password"> Username and password</label><br>
+                <label><input type="radio" name="answer_9" value="Security questions"> Security questions</label><br>
+                <label><input type="radio" name="answer_9" value="One-time password (OTP)"> One-time password (OTP)</label><br>
+            </div>
+            <!-- Question 10 -->
+            <div class="quiz-question">
+                <p>Which protocol is commonly used for secure communication over the internet?</p>
+                <label><input type="radio" name="answer_10" value="HTTPS" required> HTTPS</label><br>
+                <label><input type="radio" name="answer_10" value="FTP"> FTP</label><br>
+                <label><input type="radio" name="answer_10" value="SMTP"> SMTP</label><br>
+                <label><input type="radio" name="answer_10" value="Telnet"> Telnet</label><br>
+            </div>
+            <!-- Question 11 -->
+            <div class="quiz-question">
+                <p>Which type of attack involves intercepting and altering communications between two parties?</p>
+                <label><input type="radio" name="answer_11" value="Man-in-the-Middle Attack" required> Man-in-the-Middle Attack</label><br>
+                <label><input type="radio" name="answer_11" value="Phishing"> Phishing</label><br>
+                <label><input type="radio" name="answer_11" value="SQL Injection"> SQL Injection</label><br>
+                <label><input type="radio" name="answer_11" value="Denial of Service"> Denial of Service</label><br>
+            </div>
+            <!-- Question 12 -->
+            <div class="quiz-question">
+                <p>What does VPN stand for?</p>
+                <label><input type="radio" name="answer_12" value="Virtual Private Network" required> Virtual Private Network</label><br>
+                <label><input type="radio" name="answer_12" value="Very Public Network"> Very Public Network</label><br>
+                <label><input type="radio" name="answer_12" value="Virtual Protocol Network"> Virtual Protocol Network</label><br>
+                <label><input type="radio" name="answer_12" value="Verified Private Network"> Verified Private Network</label><br>
+            </div>
+            <!-- Question 13 -->
+            <div class="quiz-question">
+                <p>Which tool is used to test for vulnerabilities in web applications?</p>
+                <label><input type="radio" name="answer_13" value="OWASP ZAP" required> OWASP ZAP</label><br>
+                <label><input type="radio" name="answer_13" value="Wireshark"> Wireshark</label><br>
+                <label><input type="radio" name="answer_13" value="Metasploit"> Metasploit</label><br>
+                <label><input type="radio" name="answer_13" value="Nmap"> Nmap</label><br>
+            </div>
+            <!-- Question 14 -->
+            <div class="quiz-question">
+                <p>What is a common indicator of a phishing attempt?</p>
+                <label><input type="radio" name="answer_14" value="Suspicious email addresses" required> Suspicious email addresses</label><br>
+                <label><input type="radio" name="answer_14" value="Encrypted messages"> Encrypted messages</label><br>
+                <label><input type="radio" name="answer_14" value="Digital signatures"> Digital signatures</label><br>
+                <label><input type="radio" name="answer_14" value="Two-factor authentication"> Two-factor authentication</label><br>
+            </div>
+            <!-- Question 15 -->
+            <div class="quiz-question">
+                <p>Which type of malware disguises itself as legitimate software?</p>
+                <label><input type="radio" name="answer_15" value="Trojan Horse" required> Trojan Horse</label><br>
+                <label><input type="radio" name="answer_15" value="Ransomware"> Ransomware</label><br>
+                <label><input type="radio" name="answer_15" value="Worm"> Worm</label><br>
+                <label><input type="radio" name="answer_15" value="Virus"> Virus</label><br>
+            </div>
+            <!-- Question 16 -->
+            <div class="quiz-question">
+                <p>Which term describes the practice of hiding information within other data?</p>
+                <label><input type="radio" name="answer_16" value="Steganography" required> Steganography</label><br>
+                <label><input type="radio" name="answer_16" value="Cryptography"> Cryptography</label><br>
+                <label><input type="radio" name="answer_16" value="Encoding"> Encoding</label><br>
+                <label><input type="radio" name="answer_16" value="Compression"> Compression</label><br>
+            </div>
+            <!-- Question 17 -->
+            <div class="quiz-question">
+                <p>What is the main purpose of penetration testing?</p>
+                <label><input type="radio" name="answer_17" value="Identify vulnerabilities" required> Identify vulnerabilities</label><br>
+                <label><input type="radio" name="answer_17" value="Encrypt data"> Encrypt data</label><br>
+                <label><input type="radio" name="answer_17" value="Monitor network traffic"> Monitor network traffic</label><br>
+                <label><input type="radio" name="answer_17" value="Manage user permissions"> Manage user permissions</label><br>
+            </div>
+            <!-- Question 18 -->
+            <div class="quiz-question">
+                <p>Which type of attack floods a network with excessive traffic to cause disruptions?</p>
+                <label><input type="radio" name="answer_18" value="Denial of Service (DoS)" required> Denial of Service (DoS)</label><br>
+                <label><input type="radio" name="answer_18" value="SQL Injection"> SQL Injection</label><br>
+                <label><input type="radio" name="answer_18" value="Phishing"> Phishing</label><br>
+                <label><input type="radio" name="answer_18" value="Man-in-the-Middle"> Man-in-the-Middle</label><br>
+            </div>
+            <!-- Question 19 -->
+            <div class="quiz-question">
+                <p>What does the term "ransomware" refer to?</p>
+                <label><input type="radio" name="answer_19" value="Malware that encrypts data and demands a ransom" required> Malware that encrypts data and demands a ransom</label><br>
+                <label><input type="radio" name="answer_19" value="Software for managing network traffic"> Software for managing network traffic</label><br>
+                <label><input type="radio" name="answer_19" value="A tool for password management"> A tool for password management</label><br>
+                <label><input type="radio" name="answer_19" value="An anti-virus program"> An anti-virus program</label><br>
+            </div>
+            <!-- Question 20 -->
+            <div class="quiz-question">
+                <p>Which security measure protects data from unauthorized access during transmission?</p>
+                <label><input type="radio" name="answer_20" value="Encryption" required> Encryption</label><br>
+                <label><input type="radio" name="answer_20" value="Firewall"> Firewall</label><br>
+                <label><input type="radio" name="answer_20" value="Anti-virus software"> Anti-virus software</label><br>
+                <label><input type="radio" name="answer_20" value="Multi-factor authentication"> Multi-factor authentication</label><br>
+            </div>
+            <input type="hidden" name="questions" value="1,2,3,...,20"> <!-- Include question IDs -->
+            <button type="submit" class="submit-button">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cybersecurity Awareness. All rights reserved.</p>
+    </footer>
+</body>
+</html>

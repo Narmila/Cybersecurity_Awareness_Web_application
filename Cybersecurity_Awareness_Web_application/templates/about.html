@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cybersecurity Awareness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/lessons">Lessons</a></li>
+                <li><a href="/quiz">Quiz</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about-section">
+            <img src="{{ url_for('static', filename='css/v.jpg') }}" alt="About Us" class="about-image">
+            <h1>About Us</h1>
+            <p>Welcome to Cybersecurity Awareness, where our mission is to educate and empower individuals and organizations about the importance of cybersecurity. Our team of experts is dedicated to providing the latest information, tools, and strategies to help you stay safe online.</p>
+            <p>Founded in 2024, Cybersecurity Awareness combines industry experience with cutting-edge technology to deliver high-quality resources and training. We offer a range of services including interactive lessons, quizzes, and real-time updates on emerging threats.</p>
+            <p>Our goal is to foster a secure digital environment by raising awareness and promoting best practices in cybersecurity. We believe that knowledge is power and strive to make cybersecurity education accessible to everyone.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cybersecurity Awareness. All rights reserved.</p>
+    </footer>
+</body>
+</html>
